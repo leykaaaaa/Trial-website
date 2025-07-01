@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Business Card</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e8f5e9);
+      color: #333;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      position: relative;
+      text-align: center;
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .social-icons a {
+      margin-left: 10px;
+      color: #e91e63;
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #4caf50;
+    }
+
+    .owner-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #e91e63;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .owner-details h2 {
+      color: #4caf50;
+      margin: 10px 0 5px;
+    }
+
+    .owner-details p {
+      margin: 5px 0;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    .contact-info a {
+      color: #e91e63;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .contact-info a:hover {
+      color: #4caf50;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/ctrl.leyk" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ctrl.leyk" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/leykaaaaa24" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <!-- Photo -->
+    <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/471569298_1371897473778801_2948379870528050298_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFm4ikkWAekPWKa0P0vxilml8n-OGQTFBuXyf44ZBMUG6Bl3D8Q8vIMdakDBFxWdHPWkn2JWblLInVU7h8kjc0K&_nc_ohc=3ZTQyL3B2AwQ7kNvwFNokwA&_nc_oc=AdmQDA-pMB1bBIplnAfijz9sVr-Ft6VGQXkyf4UinkLQS0_bTmD4N16umnnBppWCHZk&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=AQhFoFAdV2lr_m4GsZMj9Q&oh=00_AfNEQusoUD2zVvBrzAPK5wC0JVkqmaVb9E0hCvWQzFan_A&oe=6867D8BD" alt="Owner Photo" class="owner-photo" />
+
+    <!-- Owner Info -->
+    <div class="owner-details">
+      <h2>Angelica Tulagan</h2>
+      <p>Creative Designer & Web Developer</p>
+      <p>Based in Pangasinan, Philippines</p>
+    </div>
+
+    <!-- Contact Info with Icons Only -->
+    <div class="contact-info">
+      <a href="tel:+639-8548-17056" title="Call"><i class="fas fa-phone"></i></a>
+      <a href="mailto:angelictulagan09@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</body>
+</html>
